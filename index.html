@@ -50,6 +50,54 @@
             width: 30%;
             margin: 20px;
             padding: 20px;
+            position: relative;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .serviceDva {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            position: relative;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .more-text {
+            display: none;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .expand-btn {
+            color: #08a6a1;
+            cursor: pointer;
+            font-weight: bold;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-align: center;
+        }
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #about .service {
+            width: 60%;
+            margin: 20px 0;
+        }
+        #about .serviceDva {
+            width: auto;
+            margin: 20px 0;
         }
 
         footer {
@@ -68,56 +116,137 @@
             }
         }
     </style>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
 </head>
 <body>
 
 <header>
-    <h1>Dětský rozvoj</h1>
+    <h1>Učím se snadno</h1>
     <p>Soukromé konzultace pro děti se specifickými potřebami</p>
 </header>
 
+
 <nav>
-    <a href="#services">Služby</a>
-    <a href="#about">O nás</a>
+    <a href="#services">Co nabízím</a>
+    <a href="#about">O mně</a>
     <a href="#contact">Kontakt</a>
 </nav>
 
 <section id="services">
     <h2>Co nabízím</h2>
     <div class="service-section">
-        <div class="service">
+        <div class="service" id="service-1">
             <h3>Předškolní příprava</h3>
-            <p>Připravím vaše dítě na bezproblémový nástup do školy. Pomáhám s rozvojem základních dovedností a schopností.</p>
+            <p>Školní zralost je ucelený  komplex dovedností a schopností, které každé dítě potřebuje k tomu, aby ve škole obstálo a zúročilo tam svůj potenciál. Zní to možná jednoduše, ale skutečnost je složitější. Každé dítě se totiž vyvíjí „po svém“ a najít tu správnou hranici, kdy už je zralé pro školu, nebývá úplně hračka.
+            </p>
+            <p class="more-text">Školní zralost předpokládá určitý rozvoj jazyka a myšlenkových operací, schopnost aktivní pozornosti a soustředění a určitou úroveň sociálních dovedností. Pokud dítě do školy nastoupí předčasně, tedy v době, kdy ještě nedozrálo, může to u něj vést až k neurotizaci, nebo dokonce k regresi vývoje. Proto je třeba dobře poznat, zda dítě už na školu „má“, nebo by mu prospěl odklad školní docházky. Při posouzení zralosti sledujeme především fyzickou zdatnost, úroveň grafomotoriky, poznávací funkce, řeč, výslovnost, emoční a sociální zralost – zda se dítě dokáže na delší dobu odpoutat od matky, zda dokáže respektovat jinou dospělou osobu než rodiče, jaké má vztahy s vrstevníky, pozici ve skupině, úroveň hry a mnoho dalšího</p>
+            <span class="expand-btn" onclick="toggleText(this)">Více ⮟</span>
         </div>
-        <div class="service">
-            <h3>Grafomotorika</h3>
-            <p>Pomáháme dětem s rozvojem jemné motoriky, důležité pro správné psaní a kreslení. Zábavné a efektivní cvičení.</p>
+        <div class="service" id="service-2">
+            <h3>Náprava grafomotorických obtíží</h3>
+            <p>Nerozvinutá grafomotorika a obtíže v grafomotorických dovednostech bývají důvodem pro odklad školní docházky, protože nedostatky v rozvoji grafomotoriky by mohly předznamenávat potíže při nácviku psaní.</p>
+            <p class="more-text">Grafomotorické poruchy se nejčastěji objevují spolu s horší koordinací těla a artikulačních orgánů. Pokud by se u dítěte včas nerozpoznaly grafomotorické problémy a projevily by se až ve škole, u dítěte by mohlo dojít k vážným problémům při jeho snaze o písemné vyjadřování. Pokud se projeví ve škole problémy se správným osvojováním tvarů písmen, grafický projev je špatně čitelný, těžkopádný a dítě je pomalé, je potřeba co nejdříve začít s nápravou. Dítě si totiž může svůj handicap uvědomovat a tím se oslabuje jeho vnitřní motivace k psaní, dítě ztrácí důvěru v sebe a ovlivňuje to jeho osobnostní rozvoj. Grafomotorické poruchy je potřeba rozpoznat včas již v předškolním věku a tím se vyhnout pozdějším potížím.
+            </p>
+            <span class="expand-btn" onclick="toggleText(this)">Více ⮟</span>
         </div>
-        <div class="service">
-            <h3>Reedukace specifických poruch učení</h3>
-            <p>Podporujeme děti s dyslexií, dysgrafií a dalšími poruchami učení. Individuální přístup a trpělivé vedení.</p>
+        <div class="service" id="service-3">
+            <h3>Když se ve škole nedaří - specifické poruchy učení</h3>
+            <p>Specifické poruchy učení negativně ovlivňují školní úspěšnost a tím nepříznivě působí na psychiku dětí. Důležité je proto včasné rozpoznání a diagnostika SPU a výběr adekvátních reedukačních postupů.
+            </p>
+            <p class="more-text">Specifické poruchy učení (SPU) jsou definovány jako neschopnost naučit se číst, psát a počítat pomocí běžných výukových metod. Školní výkony dětí, které trpí SPU, neodpovídají jejich skutečným intelektovým vlastnostem, jež bývají na vyšší úrovni. Při práci s dětmi se věnuji nápravám a kompenzaci tří nejčastějších poruch učení - dyslexii, dysgrafii a dysortografii. U dětí se SPU bývá nedostatečně vyvinutý proces smyslového vnímání, čímž dochází ke zkreslenému vnímání světa - dítě nesprávně vnímá písmena, hlásky, číslice. Je tedy nutné rozvíjení především zrakového a sluchového vnímání včetně uplatnění multisenzorického přístupu.
+            </p>
+            <span class="expand-btn" onclick="toggleText(this)">Více ⮟</span>
         </div>
     </div>
 </section>
 
 <section id="about">
     <h2>O mně</h2>
-    <p>Jsme odborníci na rozvoj dětí se specifickými potřebami. Naše individuální přístupy pomáhají dětem dosáhnout úspěchu ve vzdělávání i osobním rozvoji.</p>
+    <img src="photo.jpg" alt="Fotka" style="width:200px;height:200px;">
+    <div class="service">
+        <h3>O mně</h3>
+        <p>Vystudovala jsem na Masarykově univerzitě v Brně obor Učitelství pro 1.stupeň ZŠ a Speciální pedagogiku - specializace somatopedie, psychopedie a oftalmopedie ( péče o děti s tělesným, mentálním a zrakovým postižením) . Během své pedagogické praxe jsem působila několik let jako učitelka ve speciální škole pro děti s mentálním a kombinovaným postižením. Nyní již několikátým rokem učím na prvním stupni soukromé ZŠ, v rámci operačního programu Jan Amos Komenský spolupracuji s Pedagogicko -psychologickou poradnou Lexík. Pořádám kurzy předškolní přípravy pro MŠ.
+        </p>
+    </div>
+    <div class="serviceDva">
+        <h3>Vzdělání a kurzy</h3>
+        <p> - Letní škola Hejného 2021a 2022 <br>
+            - Matematická prostředí v Hejného matematice na 1.stupni<br>
+            - Jak poznat rizika poruch učení v 1.třídě<br>
+            - Jak pracovat s talentovanými dětmi v běžné třídě<br>
+            - Žák s vývojovou dysfázií na ZŠ<br>
+            - Hrajeme si v českém jazyce<br>
+            - Výuka v málotřídní škole<br>
+            - Bilingvní dítě v mateřské a základní škole<br>
+            - Metody vyučování čtení<br>
+            - ADHD u dětí<br>
+            - Badatelsky orientovaná výuka v praxi<br>
+            - Hodnocení žáků ve vzdělávacím procesu<br>
+            - Práce se vztahy ve třídě<br>
+            - Akademie Libchavy 2023 - Učitel koučem<br>
+            - Diagnostika schopností a dovedností v oblasti čtení a psaní<br>
+            - Diagnostika matematických schopností a dovedností<br>
+            - Neurovývojové souvislosti v procesu učení<br>
+            - Čtením a psaním ke kritickému myšlení<br>
+
+        </p>
+    </div>
 </section>
 
 <section id="contact">
     <h2>Kontakt</h2>
-    <p>Máte zájem o naše služby? Napište nám na <a href="mailto:info@detskyrozvoj.cz">info@detskyrozvoj.cz</a> nebo volejte na <strong>+420 123 456 789</strong>.</p>
+    <p>
+        <strong> Mgr. Gabriela Horová </strong> <br>
+        Tel. 776 668 387 <br>
+        Email: gabriela.horova@seznam.cz <br>
+        Lekce probíhají v Babicích u Říčan<br>
+    </p>
 </section>
 <section id="pricing">
     <h2>Ceník</h2>
-    <p>Hodne penez 😎.</p>
-    <p>Proc to neni videt</p>
+    <p>Nejsem vázána smlouvou se zdravotní pojišťovnou, mé služby jsou proto plně hrazeny klienty v hotovosti na místě.<br>
+        Lekce s konzultací trvá cca 45 minut v závislosti na věku a možnostech dítěte.<br>
+        <strong>Cena za výukovou lekci - 550,- Kč</strong>
+    </p>
+    <p><br><br><br></p>
 </section>
 
 <footer>
     <p>&copy; 2024 Dětský rozvoj. Všechna práva vyhrazena.</p>
 </footer>
+
+<script>
+    function toggleText(element) {
+        const service = element.closest('.service');
+        const moreText = service.querySelector('.more-text');
+
+        // Toggle the text of the clicked service
+        const isOpen = moreText.style.display === "block";
+        moreText.style.display = isOpen ? "none" : "block";
+        element.innerHTML = isOpen ? "Více ⮟" : "Méně ⮝";
+
+        // If it's the first or second service, toggle both
+        if (service.id === 'service-1' || service.id === 'service-2') {
+            const service1 = document.getElementById('service-1').querySelector('.more-text');
+            const service2 = document.getElementById('service-2').querySelector('.more-text');
+            const btn1 = document.getElementById('service-1').querySelector('.expand-btn');
+            const btn2 = document.getElementById('service-2').querySelector('.expand-btn');
+
+            if (isOpen) {
+                service1.style.display = "none";
+                service2.style.display = "none";
+                btn1.innerHTML = "Více ⮟";
+                btn2.innerHTML = "Více ⮟";
+            } else {
+                service1.style.display = "block";
+                service2.style.display = "block";
+                btn1.innerHTML = "Méně ⮝";
+                btn2.innerHTML = "Méně ⮝";
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
