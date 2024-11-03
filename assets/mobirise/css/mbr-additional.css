@@ -1337,7 +1337,7 @@ a {
 }
 .cid-urLaheDesy {
   display: flex;
-  background-image: url("../../../assets/images/background1.jpg");
+  background-image: url("../..ckground1.jpg");
 }
 .cid-urLaheDesy .mbr-overlay {
   background-color: #f92c50;
@@ -2335,6 +2335,89 @@ a {
 .cid-ut5UqUrL8m .mbr-section-subtitle,
 .cid-ut5UqUrL8m .main-button {
   color: #000000;
+}
+.cid-ut62e8vJ4C {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #edefeb;
+}
+.cid-ut62e8vJ4C .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-ut62e8vJ4C .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-ut62e8vJ4C .mbr-description {
+  text-align: left;
+}
+.cid-ut62e8vJ4C .item-wrapper {
+  background: #ffffff;
+  margin-bottom: 2rem;
+  padding: 2.25rem 2.25rem 1rem 2.25rem;
+}
+@media (max-width: 767px) {
+  .cid-ut62e8vJ4C .item-wrapper {
+    padding: 2rem 1.5rem 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-ut62e8vJ4C .item-wrapper {
+    padding: 2rem 1.5rem 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+.cid-ut62e8vJ4C .card-title,
+.cid-ut62e8vJ4C .iconfont-wrapper {
+  color: #000000;
+}
+.cid-ut62e8vJ4C .card-text {
+  color: #000000;
+}
+.cid-ut62e8vJ4C .mbr-section-title {
+  color: #000000;
+  text-align: center;
+}
+.cid-ut62e8vJ4C .mbr-text,
+.cid-ut62e8vJ4C .mbr-section-btn {
+  text-align: center;
+}
+.cid-ut62e8vJ4C .card-text,
+.cid-ut62e8vJ4C .item .mbr-section-btn {
+  text-align: left;
+}
+.cid-ut62e8vJ4C .counter-container ul {
+  margin: 0;
+  padding-left: 2.25rem;
+  list-style: none;
+}
+.cid-ut62e8vJ4C .counter-container ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.cid-ut62e8vJ4C .counter-container ul li:before {
+  position: absolute;
+  left: -1.5em;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #08a6a1;
+  background-color: #08a6a1;
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.4em;
+  border-radius: 50%;
+}
+.cid-ut62e8vJ4C .mbr-text UL {
+  text-align: left;
 }
 .cid-ut5UvszUiA {
   padding-top: 4rem;
