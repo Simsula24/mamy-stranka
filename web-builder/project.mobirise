@@ -1,0 +1,2467 @@
+{
+  "settings": {
+    "name": "skibidi",
+    "currentPage": "inde.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#397f7d",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": "3",
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#08a6a1",
+        "#397f7d"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 17,
+    "versionPublish": "5.9.18",
+    "imageResize": true,
+    "screenshot": "screenshot.png",
+    "publishEditFolder": true
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "z-index": "1000",
+            "width": "100%",
+            "position": "relative",
+            ".dropdown-item:before": {
+              "font-family": "Moririse2 !important",
+              "content": "\"\\e966\"",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "transition": "all 0.25s ease-in-out"
+            },
+            "@media (max-width: 767px)": {
+              ".navbar-toggler": {
+                "transform": "scale(0.8)"
+              }
+            },
+            ".navbar-brand": {
+              "img": {
+                "max-width": "100%",
+                "max-height": "100%"
+              },
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "10px 0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".navbar-nav": {
+              "margin": "auto",
+              "margin-left": "0",
+              "& when (@contentAlign = \"2\")": {
+                "margin-left": "auto"
+              },
+              "& when (@contentAlign = \"3\")": {
+                "margin-left": "auto",
+                "margin-right": "0"
+              },
+              ".nav-item": {
+                "padding": "0 !important",
+                "transition": "0.3s all !important",
+                ".nav-link": {
+                  "padding": "16px !important",
+                  "margin": "0 !important",
+                  "border-radius": "1rem !important",
+                  "transition": "0.3s all !important",
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  },
+                  "& when not (@isRoundedButtons)": {
+                    "border-radius": "4px !important"
+                  }
+                }
+              },
+              ".open": {
+                ".nav-link": {
+                  "&::after": {
+                    "transform": "rotate(180deg)"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&::before": {
+                      "content": "\"\"",
+                      "width": "100%",
+                      "height": "20px",
+                      "top": "100%",
+                      "background": "transparent",
+                      "position": "absolute"
+                    }
+                  }
+                }
+              },
+              ".dropdown-item": {
+                "padding": "12px !important",
+                "border-radius": "0.5rem !important",
+                "margin": "0 8px !important",
+                "transition": "0.3s all !important",
+                "&:hover": {
+                  "background-color": "rgba(27, 31, 10, 0.06)"
+                },
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              "& when not (@showLogo), (@showBrand)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1.5rem"
+                }
+              },
+              "& when not (@showBrand)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1.5rem"
+                }
+              }
+            },
+            ".nav-link": {
+              "width": "fit-content",
+              "position": "relative"
+            },
+            ".navbar-logo": {
+              "margin": "0 !important",
+              "@media (max-width: 767px)": {
+                "padding-left": "0"
+              }
+            },
+            ".navbar-caption": {
+              "padding-left": "1rem",
+              "padding-right": "0.5rem",
+              "& when not (@showLogo)": {
+                "@media (min-width: 767px)": {
+                  "padding-left": "2rem"
+                }
+              }
+            },
+            ".nav-dropdown": {
+              "@media (max-width: 767px)": {
+                "padding-bottom": "0.5rem"
+              }
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem",
+              "transition": "0.3s all"
+            },
+            ".container": {
+              "display": "flex",
+              "height": "90px",
+              "padding": "0.5rem 0.6rem 0.5rem 1rem",
+              "flex-wrap": "nowrap",
+              "& when not (@collapsed)": {
+                "@media (min-width: 992px)": {},
+                "& when (@transparent)": {
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                }
+              },
+              "left": "0",
+              "right": "0",
+              "-webkit-box-pack": "justify",
+              "-ms-flex-pack": "justify",
+              "justify-content": "flex-end",
+              "-webkit-box-align": "center",
+              "-webkit-align-items": "center",
+              "-ms-flex-align": "center",
+              "align-items": "center",
+              "border-radius": "100vw",
+              "margin-top": "1rem",
+              "background-color": "@menuBgColor",
+              "box-shadow": "0 30px 60px 0 rgba(27, 31, 10, 0.08)",
+              "@media (max-width: 992px)": {
+                "padding-right": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "width": "95%",
+                "height": "56px !important",
+                "padding": "0.5rem",
+                "margin-top": "0rem"
+              },
+              "& when not (@isRoundedButtons)": {
+                "border-radius": "4px !important"
+              }
+            },
+            ".iconfont-wrapper": {
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".dropdown-menu": {
+              "flex-wrap": "wrap",
+              "flex-direction": "column",
+              "max-width": "100%",
+              "padding": "12px 4px !important",
+              "border-radius": "1.5rem",
+              "transition": "0.3s all !important",
+              "min-width": "auto",
+              "background": "@menuBgColor",
+              "& when (@transparent)": {
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+              },
+              "& when not (@isRoundedButtons)": {
+                "border-radius": "4px !important"
+              }
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-right": "0.5rem",
+                "vertical-align": "sub",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "90px",
+              "transition": "all 0.3s",
+              "border-bottom": "1px solid transparent",
+              "background": "transparent !important",
+              "&:not(.navbar-short)": {},
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.8rem"
+              },
+              ".navbar-logo img": {
+                "width": "auto",
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-collapse": {
+                "z-index": "1",
+                "justify-content": "flex-end"
+              },
+              "&.collapsed": {
+                "justify-content": "center",
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "41%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-right": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2.5rem !important"
+                  }
+                },
+                "min-height": "72px"
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "40%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {}
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "10px"
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2rem"
+                  }
+                }
+              },
+              "padding": "0 !important",
+              "border": "none !important",
+              "box-shadow": "none !important",
+              "border-radius": "0 !important"
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "105%",
+                  "transform": "none",
+                  "top": "-12px"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "flex"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "140px",
+              "@media (max-width: 992px)": {
+                "text-align": "left"
+              }
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0 1rem"
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center",
+              "@media (max-width: 992px)": {
+                "justify-content": "flex-start",
+                "margin-bottom": "0.5rem"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "70px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~\"+\" 2rem)",
+                "left": "-1rem"
+              }
+            },
+            ".navbar .dropdown > .dropdown-menu": {
+              "display": "none",
+              "width": "max-content",
+              "max-width": "500px !important",
+              "transform": "translateX(-50%)",
+              "top": "calc(~\"100% + 20px\")",
+              "left": "50%",
+              ".dropdown-item": {
+                "line-height": "1 !important"
+              },
+              ".dropdown": {
+                ".dropdown-item": {
+                  "align-items": "center",
+                  "display": "flex",
+                  "height": "max-content !important",
+                  "min-height": "max-content !important",
+                  "&::after": {
+                    "display": "inline-block",
+                    "position": "static",
+                    "margin-left": "0.5rem",
+                    "margin-top": "0",
+                    "margin-right": "0",
+                    "margin-bottom": "0",
+                    "transition": "0.3s all",
+                    "transform": "rotate(-90deg)"
+                  }
+                }
+              },
+              ".dropdown.open": {
+                ".dropdown-item": {
+                  "&::after": {
+                    "transform": "rotate(0deg)"
+                  }
+                }
+              }
+            },
+            ".mbr-section-btn": {
+              "margin": "-0.6rem -0.6rem"
+            },
+            ".navbar-toggler": {
+              "margin-left": "12px",
+              "margin-right": "8px",
+              "order": "1000"
+            },
+            "& when (@collapsed)": {
+              ".navbar-brand": {
+                "margin-right": "auto"
+              },
+              ".navbar-collapse": {
+                "z-index": "-1 !important",
+                "position": "absolute",
+                "top": "110%",
+                "left": "0",
+                "width": "100%",
+                "padding": "1rem",
+                "border-radius": "1.5rem",
+                "background": "@menuBgColor",
+                "& when (@transparent)": {
+                  "border-color": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important",
+                  "opacity": "1",
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                },
+                "backdrop-filter": "blur(8px)",
+                "@media (max-width: 575px)": {
+                  "padding": "1rem"
+                },
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-nav": {
+                ".nav-item": {
+                  ".nav-link": {
+                    "&::after": {
+                      "margin-left": "10px"
+                    }
+                  }
+                },
+                ".dropdown-item": {
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  }
+                }
+              },
+              ".navbar .dropdown > .dropdown-menu": {
+                "display": "none",
+                "max-width": "100% !important",
+                "transform": "translateX(0)",
+                "top": "10px",
+                "left": "0",
+                "padding": "8px !important",
+                "border-radius": "0.5rem",
+                "background-color": "rgba(27, 31, 10, 0.04) !important",
+                ".dropdown-item": {
+                  "padding": "8px !important",
+                  "line-height": "1 !important",
+                  "margin-bottom": "4px !important"
+                },
+                ".dropdown": {
+                  ".dropdown-item": {
+                    "align-items": "center",
+                    "display": "flex",
+                    "height": "max-content !important",
+                    "min-height": "max-content !important",
+                    "&::after": {
+                      "display": "inline-block",
+                      "position": "static",
+                      "margin-left": "0.5rem",
+                      "margin-top": "0",
+                      "margin-right": "0",
+                      "margin-bottom": "0",
+                      "transition": "0.3s all",
+                      "transform": "rotate(0deg)"
+                    }
+                  }
+                },
+                ".dropdown.open": {
+                  ".dropdown-item": {
+                    "&::after": {
+                      "transform": "rotate(180deg)"
+                    }
+                  }
+                },
+                ".dropdown-submenu": {
+                  "position": "static",
+                  "width": "100%",
+                  "max-width": "100% !important",
+                  "transform": "translateX(0) !important",
+                  "top": "0",
+                  "left": "0",
+                  "padding": "8px !important",
+                  "border-radius": "0.5rem",
+                  "background-color": "rgba(27, 31, 10, 0.04) !important"
+                }
+              },
+              ".navbar .dropdown.open > .dropdown-menu": {
+                "display": "flex",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              },
+              ".navbar .dropdown > .dropdown-submenu.show": {
+                "display": "flex",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".navbar-brand": {
+                "margin-right": "auto"
+              },
+              ".navbar-collapse": {
+                "z-index": "-1 !important",
+                "position": "absolute",
+                "top": "110%",
+                "left": "0",
+                "width": "100%",
+                "padding": "1rem",
+                "border-radius": "1.5rem",
+                "background": "@menuBgColor",
+                "& when (@transparent)": {
+                  "opacity": "1",
+                  "border-color": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important",
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                },
+                "backdrop-filter": "blur(8px)",
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-nav": {
+                ".nav-item": {
+                  ".nav-link": {
+                    "&::after": {
+                      "margin-left": "10px"
+                    }
+                  }
+                },
+                ".dropdown-item": {
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  }
+                }
+              },
+              ".navbar .dropdown > .dropdown-menu": {
+                "max-width": "100% !important",
+                "transform": "translateX(0)",
+                "top": "10px",
+                "left": "0",
+                "padding": "8px !important",
+                "border-radius": "1rem",
+                "background-color": "rgba(27, 31, 10, 0.04) !important",
+                ".dropdown-item": {
+                  "padding": "8px !important",
+                  "line-height": "1 !important",
+                  "margin-bottom": "4px !important"
+                },
+                ".dropdown": {
+                  ".dropdown-item": {
+                    "align-items": "center",
+                    "display": "flex",
+                    "height": "max-content !important",
+                    "min-height": "max-content !important",
+                    "&::after": {
+                      "display": "inline-block",
+                      "position": "static",
+                      "margin-left": "0.5rem",
+                      "margin-top": "0",
+                      "margin-right": "0",
+                      "margin-bottom": "0",
+                      "transition": "0.3s all",
+                      "transform": "rotate(0deg)"
+                    }
+                  }
+                },
+                ".dropdown.open": {
+                  ".dropdown-item": {
+                    "&::after": {
+                      "transform": "rotate(180deg)"
+                    }
+                  }
+                },
+                ".dropdown-submenu": {
+                  "position": "static",
+                  "width": "100%",
+                  "max-width": "100% !important",
+                  "transform": "translateX(0) !important",
+                  "top": "0",
+                  "left": "0",
+                  "padding": "8px !important",
+                  "border-radius": "1rem",
+                  "background-color": "rgba(27, 31, 10, 0.04) !important"
+                }
+              },
+              ".navbar .dropdown.open > .dropdown-menu": {
+                "display": "flex !important",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              }
+            },
+            ".navbar-collapse": {
+              "@media (max-width: 575px)": {
+                "padding": "1rem"
+              }
+            }
+          },
+          "_name": "menu05",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"menu menu5\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\t<mbr-parameters>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"1\" max=\"5\" step=\"0.1\" value=\"5\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<select title=\"Menu Items Align\" name=\"contentAlign\" condition=\"showItems\">\n\t\t\t<option value=\"1\">Left</option>\n\t\t\t<option value=\"2\">Center</option>\n\t\t\t<option value=\"3\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n\t\t<header>Styles</header>\n\t\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\" condition=\"none\">\n\t\t<input type=\"checkbox\" title=\"Transparent\" name=\"transparent\" checked>\n\t\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n\t\t<input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"transparent\">\n\t\t<input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#000000\">\n\t</mbr-parameters>\n\n\t<nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"navbar-brand\">\n\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<a href=\"inde.html#features05-1\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/web-app-manifest-137x137.png\" alt=\"Učím se snadno\" mbr-style=\"{'height': logoSize + 'rem'}\">\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Učím se snadno</a></span>\n\t\t\t</div>\n\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" mbr-if=\"showItems || showButtons\">\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black text-primary\" href=\"inde.html#features05-1\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Co nabízím</a>\n\t\t\t\t\t</li><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black text-primary\" href=\"inde.html#features031-d\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">O mně</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black text-primary\" href=\"inde.html#contacts01-a\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Ceník</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"> Start Now!</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>",
+          "_cid": "urLaeAMaet",
+          "_anchor": "menu05-2",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "display": "flex",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = \"video\")": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrap": {
+              "padding": "5rem 1rem",
+              "@media (min-width: 992px)": {
+                "padding": "5rem 3rem"
+              }
+            },
+            "@media (min-width: 768px)": {
+              "align-items": "~\"@{verticalAlign}\"",
+              ".row": {
+                "justify-content": "~\"@{horizontalAlign}\""
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".content-wrap": {
+                "min-width": "50%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".mbr-row": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              },
+              ".content-wrap": {
+                "width": "100%"
+              }
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "header09",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header09 startm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\t\n    <mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked=\"\">\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline=\"\" name=\"contentWidth\" title=\"Content Width\" min=\"4\" max=\"12\" step=\"1\" value=\"8\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked=\"\">\n\t\t<select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n\t\t\t<option value=\"flex-start\">Top</option>\n\t\t\t<option value=\"center\" selected=\"\">Center</option>\n\t\t\t<option value=\"flex-end\">Bottom</option>\n\t\t</select>\n\t\t<select title=\"Horizontal Align\" name=\"horizontalAlign\">\n\t\t\t<option value=\"flex-start\">Left</option>\n\t\t\t<option value=\"center\" selected=\"\">Center</option>\n\t\t\t<option value=\"flex-end\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" selected=\"\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#393193\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f92c50\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n\t\t\t\t\t<b>Create, connect, shine</b>\n\t\t\t\t</h1>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n\t\t\t\t\tHeader Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tMobirise Free Website Maker is perfect for non-techies and great for pro-coders for fast prototyping\n\t\t\t\t\tand small customers' projects.\n\t\t\t\t</p>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t<a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tLearn more\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "urLaheDesy",
+          "_anchor": "header09-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#2e481a\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"></p><p>\n                    © Copyright 2024&nbsp;ucimsesnadno.cz&nbsp;&nbsp;- Všechna práva vyhrazena</p><p></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ut9ppnpIbw",
+          "_anchor": "footer04-f",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "inde.html": {
+      "settings": {
+        "title": "Učím se snadno",
+        "order": "1",
+        "meta_descr": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "z-index": "1000",
+            "width": "100%",
+            "position": "relative",
+            ".dropdown-item:before": {
+              "font-family": "Moririse2 !important",
+              "content": "\"\\e966\"",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "transition": "all 0.25s ease-in-out"
+            },
+            "@media (max-width: 767px)": {
+              ".navbar-toggler": {
+                "transform": "scale(0.8)"
+              }
+            },
+            ".navbar-brand": {
+              "img": {
+                "max-width": "100%",
+                "max-height": "100%"
+              },
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "10px 0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".navbar-nav": {
+              "margin": "auto",
+              "margin-left": "0",
+              "& when (@contentAlign = \"2\")": {
+                "margin-left": "auto"
+              },
+              "& when (@contentAlign = \"3\")": {
+                "margin-left": "auto",
+                "margin-right": "0"
+              },
+              ".nav-item": {
+                "padding": "0 !important",
+                "transition": "0.3s all !important",
+                ".nav-link": {
+                  "padding": "16px !important",
+                  "margin": "0 !important",
+                  "border-radius": "1rem !important",
+                  "transition": "0.3s all !important",
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  },
+                  "& when not (@isRoundedButtons)": {
+                    "border-radius": "4px !important"
+                  }
+                }
+              },
+              ".open": {
+                ".nav-link": {
+                  "&::after": {
+                    "transform": "rotate(180deg)"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&::before": {
+                      "content": "\"\"",
+                      "width": "100%",
+                      "height": "20px",
+                      "top": "100%",
+                      "background": "transparent",
+                      "position": "absolute"
+                    }
+                  }
+                }
+              },
+              ".dropdown-item": {
+                "padding": "12px !important",
+                "border-radius": "0.5rem !important",
+                "margin": "0 8px !important",
+                "transition": "0.3s all !important",
+                "&:hover": {
+                  "background-color": "rgba(27, 31, 10, 0.06)"
+                },
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              "& when not (@showLogo), (@showBrand)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1.5rem"
+                }
+              },
+              "& when not (@showBrand)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1.5rem"
+                }
+              }
+            },
+            ".nav-link": {
+              "width": "fit-content",
+              "position": "relative"
+            },
+            ".navbar-logo": {
+              "margin": "0 !important",
+              "@media (max-width: 767px)": {
+                "padding-left": "0"
+              }
+            },
+            ".navbar-caption": {
+              "padding-left": "1rem",
+              "padding-right": "0.5rem",
+              "& when not (@showLogo)": {
+                "@media (min-width: 767px)": {
+                  "padding-left": "2rem"
+                }
+              }
+            },
+            ".nav-dropdown": {
+              "@media (max-width: 767px)": {
+                "padding-bottom": "0.5rem"
+              }
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem",
+              "transition": "0.3s all"
+            },
+            ".container": {
+              "display": "flex",
+              "height": "90px",
+              "padding": "0.5rem 0.6rem 0.5rem 1rem",
+              "flex-wrap": "nowrap",
+              "& when not (@collapsed)": {
+                "@media (min-width: 992px)": {},
+                "& when (@transparent)": {
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                }
+              },
+              "left": "0",
+              "right": "0",
+              "-webkit-box-pack": "justify",
+              "-ms-flex-pack": "justify",
+              "justify-content": "flex-end",
+              "-webkit-box-align": "center",
+              "-webkit-align-items": "center",
+              "-ms-flex-align": "center",
+              "align-items": "center",
+              "border-radius": "100vw",
+              "margin-top": "1rem",
+              "background-color": "@menuBgColor",
+              "box-shadow": "0 30px 60px 0 rgba(27, 31, 10, 0.08)",
+              "@media (max-width: 992px)": {
+                "padding-right": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "width": "95%",
+                "height": "56px !important",
+                "padding": "0.5rem",
+                "margin-top": "0rem"
+              },
+              "& when not (@isRoundedButtons)": {
+                "border-radius": "4px !important"
+              }
+            },
+            ".iconfont-wrapper": {
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".dropdown-menu": {
+              "flex-wrap": "wrap",
+              "flex-direction": "column",
+              "max-width": "100%",
+              "padding": "12px 4px !important",
+              "border-radius": "1.5rem",
+              "transition": "0.3s all !important",
+              "min-width": "auto",
+              "background": "@menuBgColor",
+              "& when (@transparent)": {
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+              },
+              "& when not (@isRoundedButtons)": {
+                "border-radius": "4px !important"
+              }
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-right": "0.5rem",
+                "vertical-align": "sub",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "90px",
+              "transition": "all 0.3s",
+              "border-bottom": "1px solid transparent",
+              "background": "transparent !important",
+              "&:not(.navbar-short)": {},
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.8rem"
+              },
+              ".navbar-logo img": {
+                "width": "auto",
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-collapse": {
+                "z-index": "1",
+                "justify-content": "flex-end"
+              },
+              "&.collapsed": {
+                "justify-content": "center",
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "41%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-right": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2.5rem !important"
+                  }
+                },
+                "min-height": "72px"
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "40%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {}
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "10px"
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2rem"
+                  }
+                }
+              },
+              "padding": "0 !important",
+              "border": "none !important",
+              "box-shadow": "none !important",
+              "border-radius": "0 !important"
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "105%",
+                  "transform": "none",
+                  "top": "-12px"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "flex"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "140px",
+              "@media (max-width: 992px)": {
+                "text-align": "left"
+              }
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0 1rem"
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center",
+              "@media (max-width: 992px)": {
+                "justify-content": "flex-start",
+                "margin-bottom": "0.5rem"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "70px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~\"+\" 2rem)",
+                "left": "-1rem"
+              }
+            },
+            ".navbar .dropdown > .dropdown-menu": {
+              "display": "none",
+              "width": "max-content",
+              "max-width": "500px !important",
+              "transform": "translateX(-50%)",
+              "top": "calc(~\"100% + 20px\")",
+              "left": "50%",
+              ".dropdown-item": {
+                "line-height": "1 !important"
+              },
+              ".dropdown": {
+                ".dropdown-item": {
+                  "align-items": "center",
+                  "display": "flex",
+                  "height": "max-content !important",
+                  "min-height": "max-content !important",
+                  "&::after": {
+                    "display": "inline-block",
+                    "position": "static",
+                    "margin-left": "0.5rem",
+                    "margin-top": "0",
+                    "margin-right": "0",
+                    "margin-bottom": "0",
+                    "transition": "0.3s all",
+                    "transform": "rotate(-90deg)"
+                  }
+                }
+              },
+              ".dropdown.open": {
+                ".dropdown-item": {
+                  "&::after": {
+                    "transform": "rotate(0deg)"
+                  }
+                }
+              }
+            },
+            ".mbr-section-btn": {
+              "margin": "-0.6rem -0.6rem"
+            },
+            ".navbar-toggler": {
+              "margin-left": "12px",
+              "margin-right": "8px",
+              "order": "1000"
+            },
+            "& when (@collapsed)": {
+              ".navbar-brand": {
+                "margin-right": "auto"
+              },
+              ".navbar-collapse": {
+                "z-index": "-1 !important",
+                "position": "absolute",
+                "top": "110%",
+                "left": "0",
+                "width": "100%",
+                "padding": "1rem",
+                "border-radius": "1.5rem",
+                "background": "@menuBgColor",
+                "& when (@transparent)": {
+                  "border-color": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important",
+                  "opacity": "1",
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                },
+                "backdrop-filter": "blur(8px)",
+                "@media (max-width: 575px)": {
+                  "padding": "1rem"
+                },
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-nav": {
+                ".nav-item": {
+                  ".nav-link": {
+                    "&::after": {
+                      "margin-left": "10px"
+                    }
+                  }
+                },
+                ".dropdown-item": {
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  }
+                }
+              },
+              ".navbar .dropdown > .dropdown-menu": {
+                "display": "none",
+                "max-width": "100% !important",
+                "transform": "translateX(0)",
+                "top": "10px",
+                "left": "0",
+                "padding": "8px !important",
+                "border-radius": "0.5rem",
+                "background-color": "rgba(27, 31, 10, 0.04) !important",
+                ".dropdown-item": {
+                  "padding": "8px !important",
+                  "line-height": "1 !important",
+                  "margin-bottom": "4px !important"
+                },
+                ".dropdown": {
+                  ".dropdown-item": {
+                    "align-items": "center",
+                    "display": "flex",
+                    "height": "max-content !important",
+                    "min-height": "max-content !important",
+                    "&::after": {
+                      "display": "inline-block",
+                      "position": "static",
+                      "margin-left": "0.5rem",
+                      "margin-top": "0",
+                      "margin-right": "0",
+                      "margin-bottom": "0",
+                      "transition": "0.3s all",
+                      "transform": "rotate(0deg)"
+                    }
+                  }
+                },
+                ".dropdown.open": {
+                  ".dropdown-item": {
+                    "&::after": {
+                      "transform": "rotate(180deg)"
+                    }
+                  }
+                },
+                ".dropdown-submenu": {
+                  "position": "static",
+                  "width": "100%",
+                  "max-width": "100% !important",
+                  "transform": "translateX(0) !important",
+                  "top": "0",
+                  "left": "0",
+                  "padding": "8px !important",
+                  "border-radius": "0.5rem",
+                  "background-color": "rgba(27, 31, 10, 0.04) !important"
+                }
+              },
+              ".navbar .dropdown.open > .dropdown-menu": {
+                "display": "flex",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              },
+              ".navbar .dropdown > .dropdown-submenu.show": {
+                "display": "flex",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".navbar-brand": {
+                "margin-right": "auto"
+              },
+              ".navbar-collapse": {
+                "z-index": "-1 !important",
+                "position": "absolute",
+                "top": "110%",
+                "left": "0",
+                "width": "100%",
+                "padding": "1rem",
+                "border-radius": "1.5rem",
+                "background": "@menuBgColor",
+                "& when (@transparent)": {
+                  "opacity": "1",
+                  "border-color": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important",
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                },
+                "backdrop-filter": "blur(8px)",
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-nav": {
+                ".nav-item": {
+                  ".nav-link": {
+                    "&::after": {
+                      "margin-left": "10px"
+                    }
+                  }
+                },
+                ".dropdown-item": {
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  }
+                }
+              },
+              ".navbar .dropdown > .dropdown-menu": {
+                "max-width": "100% !important",
+                "transform": "translateX(0)",
+                "top": "10px",
+                "left": "0",
+                "padding": "8px !important",
+                "border-radius": "1rem",
+                "background-color": "rgba(27, 31, 10, 0.04) !important",
+                ".dropdown-item": {
+                  "padding": "8px !important",
+                  "line-height": "1 !important",
+                  "margin-bottom": "4px !important"
+                },
+                ".dropdown": {
+                  ".dropdown-item": {
+                    "align-items": "center",
+                    "display": "flex",
+                    "height": "max-content !important",
+                    "min-height": "max-content !important",
+                    "&::after": {
+                      "display": "inline-block",
+                      "position": "static",
+                      "margin-left": "0.5rem",
+                      "margin-top": "0",
+                      "margin-right": "0",
+                      "margin-bottom": "0",
+                      "transition": "0.3s all",
+                      "transform": "rotate(0deg)"
+                    }
+                  }
+                },
+                ".dropdown.open": {
+                  ".dropdown-item": {
+                    "&::after": {
+                      "transform": "rotate(180deg)"
+                    }
+                  }
+                },
+                ".dropdown-submenu": {
+                  "position": "static",
+                  "width": "100%",
+                  "max-width": "100% !important",
+                  "transform": "translateX(0) !important",
+                  "top": "0",
+                  "left": "0",
+                  "padding": "8px !important",
+                  "border-radius": "1rem",
+                  "background-color": "rgba(27, 31, 10, 0.04) !important"
+                }
+              },
+              ".navbar .dropdown.open > .dropdown-menu": {
+                "display": "flex !important",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              }
+            },
+            ".navbar-collapse": {
+              "@media (max-width: 575px)": {
+                "padding": "1rem"
+              }
+            }
+          },
+          "_name": "menu05",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"menu menu5\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\t<mbr-parameters>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"1\" max=\"5\" step=\"0.1\" value=\"5\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<select title=\"Menu Items Align\" name=\"contentAlign\" condition=\"showItems\">\n\t\t\t<option value=\"1\">Left</option>\n\t\t\t<option value=\"2\">Center</option>\n\t\t\t<option value=\"3\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n\t\t<header>Styles</header>\n\t\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\" condition=\"none\">\n\t\t<input type=\"checkbox\" title=\"Transparent\" name=\"transparent\" checked>\n\t\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n\t\t<input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"transparent\">\n\t\t<input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#000000\">\n\t</mbr-parameters>\n\n\t<nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"navbar-brand\">\n\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<a href=\"inde.html#features05-1\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/web-app-manifest-137x137.png\" alt=\"Učím se snadno\" mbr-style=\"{'height': logoSize + 'rem'}\">\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Učím se snadno</a></span>\n\t\t\t</div>\n\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" mbr-if=\"showItems || showButtons\">\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black text-primary\" href=\"inde.html#features05-1\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Co nabízím</a>\n\t\t\t\t\t</li><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black text-primary\" href=\"inde.html#features031-d\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">O mně</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black text-primary\" href=\"inde.html#contacts01-a\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Ceník</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"> Start Now!</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>",
+          "_cid": "urLaeAMaet",
+          "_anchor": "menu05-2",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = \"video\")": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "padding": "2.25rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-direction": "column",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "0rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "1rem"
+              }
+            },
+            ".mbr-iconfont": {
+              "display": "inline-flex",
+              "font-size": "3rem",
+              "color": "@iconColor",
+              "margin-bottom": "1rem",
+              "width": "80px",
+              "justify-content": "center",
+              "align-items": "center",
+              "background": "@iconbg",
+              "height": "80px",
+              "border-radius": "50%"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            ".card-box": {
+              "display": "flex",
+              "flex-direction": "column",
+              "height": "100%",
+              ".item-footer": {
+                "margin-top": "auto"
+              }
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".card-title, .iconfont-wrapper": {
+              "text-align": "center"
+            }
+          },
+          "_name": "features05",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"8\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\">\n    <header>Card</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n\t<input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#edefeb\" selected condition=\"showIcon\">\n    <input type=\"color\" title=\"Icon BG\" name=\"iconbg\" value=\"#397f7d\" selected condition=\"showIcon\">\n    <select title=\"Columns\" name=\"columns\">\n      <option value=\"12\">1</option>\n      <option value=\"6\">2</option>\n      <option value=\"4\" selected>3</option>\n      <option value=\"3\">4</option>\n    </select>\n    <input type=\"color\" title=\"BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#08a6a1\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row mb-5 justify-content-center\" mbr-if=\"showMainTitle || showMainSubtitle\">\n      <div class=\"col-12 content-head\">\n        <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>Co nabízím</b></h3>\n        <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\"></h5>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb active\">\n        <div class=\"item-wrapper\">\n          <div class=\"card-box align-left\">\n            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n              <span mbr-icon class=\"mbr-iconfont mobi-mbri-idea mobi-mbri\" style></span>\n            </div>\n            <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Předškolní příprava</b></h5>\n            <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text, .item .mbr-section-btn\">\n              Školní zralost je ucelený komplex dovedností a schopností, které každé dítě potřebuje k tomu, aby ve škole obstálo a zúročilo tam svůj potenciál. Zní to možná jednoduše, ale skutečnost je složitější. Každé dítě se totiž vyvíjí „po svém“ a najít tu správnou hranici, kdy už je zralé pro školu, nebývá úplně hračka.\n            </p>\n\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"inde.html#article22-7\" class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\">Více</a></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"card-box align-left\">\n            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n              <span mbr-icon class=\"mbr-iconfont mobi-mbri-photos mobi-mbri\"></span>\n            </div>\n            <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Náprava grafomotorických obtíží</b></h5>\n            <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text, .item .mbr-section-btn\">\n              Nerozvinutá grafomotorika a obtíže v grafomotorických dovednostech bývají důvodem pro odklad školní docházky, protože nedostatky v rozvoji grafomotoriky by mohly předznamenávat potíže při nácviku psaní.\n            </p>\n\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"inde.html#article22-8\" class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\">Více</a></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"card-box align-left\">\n            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n              <span mbr-icon class=\"mbr-iconfont mobi-mbri-change-style mobi-mbri\"></span>\n            </div>\n            <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Když se ve škole nedaří - specifické poruchy učení</b></h5>\n            <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text, .item .mbr-section-btn\">\n              Specifické poruchy učení negativně ovlivňují školní úspěšnost a tím nepříznivě působí na psychiku dětí. Důležité je proto včasné rozpoznání a diagnostika SPU a výběr adekvátních reedukačních postupů.\n            </p>\n\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"inde.html#article22-9\" class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\">Více</a></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "urLa3LDuoA",
+          "_anchor": "features05-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "padding": "2.25rem 2.25rem 1rem 2.25rem",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem"
+              }
+            },
+            ".main-button": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              },
+              "ol": {
+                "margin-bottom": "0",
+                "padding-left": "2.25rem",
+                "li": {
+                  "margin-bottom": "2rem",
+                  "list-style": "none",
+                  "position": "relative",
+                  "&:before": {
+                    "font-weight": "700",
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "counter-increment": "myCounter",
+                    "content": "counter(myCounter)",
+                    "transition": "all .2s",
+                    "color": "@iconColor",
+                    "display": "flex",
+                    "align-items": "center",
+                    "justify-content": "center"
+                  }
+                },
+                "counter-reset": "myCounter"
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            },
+            ".mbr-section-subtitle, .main-button": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "article22",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article22\" group=\"Article\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" name=\"showButton\" title=\"Buttons\">\n    <header>Card</header>\n    <input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n    <input type=\"color\" title=\"Card Color\" name=\"cardbg\" value=\"#08a6a1\" selected>\n    <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#08a6a1\" selected>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-lg-4\">\n        <div class=\"col-12 col-md-12\">\n          <h5 class=\"mbr-section-title mbr-fonts-style mt-0 mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b><br></b><br><b>Předškolní příprava</b></h5>\n          <h6 class=\"mbr-section-subtitle mbr-fonts-style mt-0 mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .main-button\" mbr-theme-style=\"display-7\"></h6>\n          <div class=\"mbr-section-btn item-footer mt-3  main-button\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n            <a href class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\">Learn More</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-8 side-features\">\n        <div class=\"item-wrapper align-left\">\n          <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n            <ol>\n              <li><b>Školní zralost předpokládá určitý rozvoj jazyka a myšlenkových operací, schopnost aktivní pozornosti a soustředění a určitou úroveň sociálních dovedností. Pokud dítě do školy nastoupí předčasně, tedy v době, kdy ještě nedozrálo, může to u něj vést až k neurotizaci, nebo dokonce k regresi vývoje. Proto je třeba dobře poznat, zda dítě už na školu „má“, nebo by mu prospěl odklad školní docházky. Při posouzení zralosti sledujeme především fyzickou zdatnost, úroveň grafomotoriky, poznávací funkce, řeč, výslovnost, emoční a sociální zralost – zda se dítě dokáže na delší dobu odpoutat od matky, zda dokáže respektovat jinou dospělou osobu než rodiče, jaké má vztahy s vrstevníky, pozici ve skupině, úroveň hry a mnoho dalšího</b></li>\n            </ol>\n          </div>\n        </div>\n\n\n\n\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "ut5UlpSMKe",
+          "_anchor": "article22-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "padding": "2.25rem 2.25rem 1rem 2.25rem",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem"
+              }
+            },
+            ".main-button": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              },
+              "ol": {
+                "margin-bottom": "0",
+                "padding-left": "2.25rem",
+                "li": {
+                  "margin-bottom": "2rem",
+                  "list-style": "none",
+                  "position": "relative",
+                  "&:before": {
+                    "font-weight": "700",
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "counter-increment": "myCounter",
+                    "content": "counter(myCounter)",
+                    "transition": "all .2s",
+                    "color": "@iconColor",
+                    "display": "flex",
+                    "align-items": "center",
+                    "justify-content": "center"
+                  }
+                },
+                "counter-reset": "myCounter"
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            },
+            ".mbr-section-subtitle, .main-button": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "article22",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article22\" group=\"Article\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" name=\"showButton\" title=\"Buttons\">\n    <header>Card</header>\n    <input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n    <input type=\"color\" title=\"Card Color\" name=\"cardbg\" value=\"#08a6a1\" selected>\n    <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#08a6a1\" selected>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-lg-4\">\n        <div class=\"col-12 col-md-12\">\n          <h5 class=\"mbr-section-title mbr-fonts-style mt-0 mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b><br></b><br><br><b>Náprava grafomotorických obtíží</b></h5>\n          <h6 class=\"mbr-section-subtitle mbr-fonts-style mt-0 mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .main-button\" mbr-theme-style=\"display-7\">\n            With a spirit of innovation, we navigate uncharted territories, exploring new ideas, technologies, and\n            approaches.</h6>\n          <div class=\"mbr-section-btn item-footer mt-3  main-button\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n            <a href class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\">Learn More</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-8 side-features\">\n        <div class=\"item-wrapper align-left\">\n          <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n            <ol>\n              <li><b>Grafomotorické poruchy se nejčastěji objevují spolu s horší koordinací těla a artikulačních orgánů. Pokud by se u dítěte včas nerozpoznaly grafomotorické problémy a projevily by se až ve škole, u dítěte by mohlo dojít k vážným problémům při jeho snaze o písemné vyjadřování. Pokud se projeví ve škole problémy se správným osvojováním tvarů písmen, grafický projev je špatně čitelný, těžkopádný a dítě je pomalé, je potřeba co nejdříve začít s nápravou. Dítě si totiž může svůj handicap uvědomovat a tím se oslabuje jeho vnitřní motivace k psaní, dítě ztrácí důvěru v sebe a ovlivňuje to jeho osobnostní rozvoj. Grafomotorické poruchy je potřeba rozpoznat včas již v předškolním věku a tím se vyhnout pozdějším potížím.</b></li>\n            </ol>\n          </div>\n        </div>\n\n\n\n\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "ut5Un1FjYK",
+          "_anchor": "article22-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "padding": "2.25rem 2.25rem 1rem 2.25rem",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem"
+              }
+            },
+            ".main-button": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              },
+              "ol": {
+                "margin-bottom": "0",
+                "padding-left": "2.25rem",
+                "li": {
+                  "margin-bottom": "2rem",
+                  "list-style": "none",
+                  "position": "relative",
+                  "&:before": {
+                    "font-weight": "700",
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "counter-increment": "myCounter",
+                    "content": "counter(myCounter)",
+                    "transition": "all .2s",
+                    "color": "@iconColor",
+                    "display": "flex",
+                    "align-items": "center",
+                    "justify-content": "center"
+                  }
+                },
+                "counter-reset": "myCounter"
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            },
+            ".mbr-section-subtitle, .main-button": {
+              "color": "#000000"
+            }
+          },
+          "_name": "article22",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article22\" group=\"Article\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" name=\"showButton\" title=\"Buttons\">\n    <header>Card</header>\n    <input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n    <input type=\"color\" title=\"Card Color\" name=\"cardbg\" value=\"#08a6a1\" selected>\n    <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#08a6a1\" selected>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-lg-4\">\n        <div class=\"col-12 col-md-12\">\n          <h5 class=\"mbr-section-title mbr-fonts-style mt-0 mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b><br></b><br><br><b>Když se ve škole nedaří</b></h5>\n          <h6 class=\"mbr-section-subtitle mbr-fonts-style mt-0 mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .main-button\" mbr-theme-style=\"display-7\">\n            With a spirit of innovation, we navigate uncharted territories, exploring new ideas, technologies, and\n            approaches.</h6>\n          <div class=\"mbr-section-btn item-footer mt-3  main-button\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n            <a href class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\">Learn More</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-8 side-features\">\n        <div class=\"item-wrapper align-left\">\n          <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n            <ol>\n              <li><b>Specifické poruchy učení (SPU) jsou definovány jako neschopnost naučit se číst, psát a počítat pomocí běžných výukových metod. Školní výkony dětí, které trpí SPU, neodpovídají jejich skutečným intelektovým vlastnostem, jež bývají na vyšší úrovni. Při práci s dětmi se věnuji nápravám a kompenzaci tří nejčastějších poruch učení - dyslexii, dysgrafii a dysortografii. U dětí se SPU bývá nedostatečně vyvinutý proces smyslového vnímání, čímž dochází ke zkreslenému vnímání světa - dítě nesprávně vnímá písmena, hlásky, číslice. Je tedy nutné rozvíjení především zrakového a sluchového vnímání včetně uplatnění multisenzorického přístupu.</b></li>\n            </ol>\n          </div>\n        </div>\n\n\n\n\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "ut5UqUrL8m",
+          "_anchor": "article22-9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-description": {
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "margin-bottom": "2rem",
+              "padding": "2.25rem 2.25rem 1rem 2.25rem",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem",
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem",
+                "margin-bottom": "1rem"
+              }
+            },
+            ".card-title, .iconfont-wrapper": {
+              "color": "#000000"
+            },
+            ".card-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".card-text, .item .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features031",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features031\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"5\">\n        <header>Card</header>\n        <input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n        <input type=\"color\" title=\"Card Color\" name=\"cardbg\" value=\"#ffffff\" selected>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#08a6a1\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\" mbr-if=\"showTitle || showText\">\n            <div class=\"col-md-12 content-head mb-5\">\n                <h1 class=\"mbr-section-title mbr-fonts-style  mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>O mně</b></h1>\n                <p class=\"mbr-text mbr-fonts-style mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Great for pro-coders for fast prototyping and small customers' projects.\n                </p>\n            </div>\n        </div>\n        <div class=\"row justify-content-center  blockContent\">\n            <div class=\"col-12 col-lg\">\n                <div class=\"item-wrapper align-left\">\n                    <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                        <ul>\n                            <li>Práce s dětmi předškolního a mladšího školního věku mě provází celý život. Každé dítě je jedinečné a vyžaduje trochu odlišný přístup a styl výuky. Najít ten správný klíč k úspěchu je pro mě vždy velká výzva. Baví mě objevovat v dětech jejich silné stránky, budovat jejich sebedůvěru a zároveň hledat způsob, jak jim pomoci v oblastech, kde se jim nedaří.</li><li>Vystudovala jsem na Masarykově univerzitě v Brně obor Učitelství pro 1.stupeň ZŠ a Speciální pedagogiku - specializace somatopedie, psychopedie a oftalmopedie ( péče o děti s tělesným, mentálním a zrakovým postižením) . Během své pedagogické praxe jsem působila několik let jako učitelka ve speciální škole pro děti s mentálním a kombinovaným postižením. Nyní již několikátým rokem učím na prvním stupni soukromé ZŠ, v rámci operačního programu Jan Amos Komenský spolupracuji s Pedagogicko -psychologickou poradnou Lexík. Pořádám kurzy předškolní přípravy pro MŠ.Vzdělání a kurzy</li>\n                        </ul>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{imageWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/photo-1212x1212.jpg\" alt=\"Gabriela Horová\">\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "ut62e8vJ4C",
+          "_anchor": "features031-d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".mbr-text, .item .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "1rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            },
+            ".mbr-card-subtitle": {
+              "color": "#232323",
+              "text-align": "left"
+            },
+            ".mbr-card-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "list06",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list06\" group=\"List\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"9\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\">\n        <input type=\"checkbox\" title=\"Position\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Date\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"List 1\" name=\"showList1\" checked>\n        <input type=\"checkbox\" title=\"List 2\" name=\"showList2\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n        <input type=\"color\" title=\"Bullet Color\" name=\"iconColor\" value=\"#08a6a1\" selected>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#edefeb\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"col-12 mb-5 content-head\" mbr-if=\"showMainTitle || showMainSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>Vzdělání a kurzy</b></h3>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n            </h5>\n        </div>\n        <div class=\"row justify-content-center \">\n            <div class=\" col-12 col-lg-{{textWidth}}\">\n                <div class=\"item features-without-image col-12 active\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"></h5>\n                        <h6 class=\"mbr-card-subtitle mbr-fonts-style mt-0 mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-card-subtitle\" mbr-theme-style=\"display-7\"></h6>\n                        <h6 class=\"mbr-card-subtitle mbr-fonts-style mt-0 mb-3\" mbr-if=\"showList1\" data-app-selector=\".mbr-card-subtitle\" mbr-theme-style=\"display-7\"></h6>\n                        <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-if=\"showList1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                            <ul>\n                                <li>Letní škola Hejného 2021 a 2022</li><li>Matematická prostředí v Hejného matematice na 1.stupni\n</li><li>Jak poznat rizika poruch učení v 1.třídě</li><li>Jak pracovat s talentovanými dětmi v běžné třídě</li><li>Žák s vývojovou dysfázií na ZŠ</li><li>Hrajeme si v českém jazyce</li><li>Výuka v málotřídní škole</li><li>Bilingvní dítě v mateřské a základní škole</li><li>Metody vyučování čtení</li><li>Kurz ADHD u dětí</li><li>Badatelsky orientovaná výuka v praxi</li><li>Hodnocení žáků ve vzdělávacím procesu</li><li>Práce se vztahy ve třídě</li><li>Akademie Libchavy 2023 - Učitel koučem</li><li>Diagnostika schopností a dovedností v oblasti čtení a psaní</li><li>Diagnostika matematických schopností a dovedností</li><li>Neurovývojové souvislosti v procesu učení</li><li>Čtením a psaním ke kritickému myšlení</li>\n                            </ul>\n                        </div>\n                        <h6 class=\"mbr-card-subtitle mbr-fonts-style mt-0 mb-3\" mbr-if=\"showList2\" data-app-selector=\".mbr-card-subtitle\" mbr-theme-style=\"display-7\">\n                            <b>Achievements</b>\n                        </h6>\n                        <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-if=\"showList2\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                            <ul>\n                                <li>Created a fresh logo for a prominent company that garnered positive feedback from\n                                    both its clientele and staff.</li>\n                                <li>Crafted a social media campaign resulting in over 1 million impressions.</li>\n                            </ul>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-white\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                Learn more</a>\n                        </div>\n                    </div>\n                </div>\n                \n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uwRAOFsuW8",
+          "_anchor": "list06-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".item": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              ".item-wrapper": {
+                "display": "flex",
+                "flex-direction": "column",
+                "height": "100%",
+                "background": "@cardsBg",
+                "padding": "2.25rem",
+                "@media (min-width: 992px) and (max-width: 1200px)": {
+                  "padding": "2rem 1.5rem"
+                },
+                "@media (max-width: 767px)": {
+                  "padding": "2rem 1.5rem"
+                }
+              }
+            },
+            ".content-head": {
+              "max-width": "800px"
+            }
+          },
+          "_name": "contacts01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contacts01\" group=\"Contacts\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <select title=\"Columns\" name=\"cardsWidth\">\n\t\t\t<option value=\"6\" selected>2</option>\n\t\t\t<option value=\"4\">3</option>\n\t\t\t<option value=\"3\">4</option>\n\t\t</select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitleCards\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"BG\" name=\"cardsBg\" value=\"#ffffff\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 content-head\">\n                <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Kontakt</b></h3>\n                    <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        Contacts Subtitle\n                    </h4>\n                </div>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}} active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\"><b>Telefon</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">+420 776 668 387</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Email</b>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">gabriela.horova@seznam.cz</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Adresa</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Starobabická 518/2, Babice</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\"><b>Ceník</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Výuková lekce - 550Kč</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ut5UvszUiA",
+          "_anchor": "contacts01-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".google-map": {
+              "height": "30rem",
+              "position": "relative",
+              "border-radius": "2rem",
+              "iframe": {
+                "height": "100%",
+                "width": "100%",
+                "border-radius": "2rem"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                }
+              }
+            },
+            ".content-head": {
+              "max-width": "800px"
+            }
+          },
+          "_name": "map01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"map1\" group=\"Maps\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Map</header>\n\t\t<input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"Starobabická 518/2, Babice\" value=\"Starobabická 518/2, Babice\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 content-head\">\n\t\t\t\t<div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Kde mě najdete</b></h3>\n\t\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\t\tFind us here\n\t\t\t\t\t</h4>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"google-map\" mbr-map=\"googleMap\"></div>\n\t</div>\n</section>",
+          "_cid": "ut5UwvmBZL",
+          "_anchor": "map01-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#2e481a\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"></p><p>\n                    © Copyright 2024&nbsp;ucimsesnadno.cz&nbsp;&nbsp;- Všechna práva vyhrazena</p><p></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ut9ppnpIbw",
+          "_anchor": "footer04-f",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
